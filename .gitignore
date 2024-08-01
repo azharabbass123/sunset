@@ -1,0 +1,14 @@
+# Ignore everything in the root except the "wp-content" directory.
+/*
+!.gitignore
+!.github
+!README.md
+# Ignore everything in the "wp-content" directory, except the "themes"
+wp-content/*
+wp-content/themes/*
+!wp-content/
+!wp-content/themes/
+!wp-content/themes/sunset-theme
+
+# Ignore all plugins
+/wp-content/plugins/
