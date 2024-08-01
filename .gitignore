@@ -1,14 +1,26 @@
-# Ignore everything in the root except the "wp-content" directory.
-/*
+# Ignore everything by default
+*
+
+# Allow necessary files and directories
 !.gitignore
 !.github
 !README.md
-# Ignore everything in the "wp-content" directory, except the "themes"
-wp-content/*
-wp-content/themes/*
+
+# Do not ignore the wp-content directory itself
 !wp-content/
+
+# Ignore everything inside wp-content
+wp-content/*
+
+# Allow the themes directory inside wp-content
 !wp-content/themes/
-!wp-content/themes/sunset-theme
+
+# Ignore everything inside the themes directory
+wp-content/themes/*
+
+# Allow your specific theme directory
+!wp-content/themes/senset-theme/
+!wp-content/themes/senset-theme/**
 
 # Ignore all plugins
-/wp-content/plugins/
+wp-content/plugins/
