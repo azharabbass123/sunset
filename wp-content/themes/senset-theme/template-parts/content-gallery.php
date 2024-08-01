@@ -2,7 +2,7 @@
 
 /*
 	
-@package sunsettheme
+@package senset-theme
 -- Gallery Post Format
 
 */

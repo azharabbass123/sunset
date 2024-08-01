@@ -2,7 +2,7 @@
 
 /*
 	
-@package sunsettheme
+@package senset-theme
 -- Quote Post Format
 
 */
