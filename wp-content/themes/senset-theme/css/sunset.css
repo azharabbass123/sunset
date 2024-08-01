@@ -72,6 +72,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.sunset-twitter:before {
+  content: "\e900";
+}
+
+.sunset-googleplus:before {
+  content: "\e901";
+}
+
+.sunset-facebook:before {
+  content: "\e902";
+}
+
 .sunset-audio:before {
   content: "\e800";
 }
@@ -902,12 +914,45 @@ h1.entry-title:after {
   font-weight: 300;
   line-height: 1.7em;
 }
+.entry-content a {
+  color: #ff0;
+  cursor: pointer;
+}
+.entry-content a:hover, .entry-content a:focus {
+  color: #f56000;
+}
 .entry-content p {
   margin-bottom: 15px;
 }
 .entry-content b,
 .entry-content strong {
   font-weight: 500;
+}
+
+/* 
+	Sharing section
+*/
+.sunset-shareThis {
+  display: block;
+  text-align: center;
+}
+.sunset-shareThis ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sunset-shareThis li {
+  float: none;
+  display: inline-block;
+}
+
+a {
+  font-size: 25px;
+  opacity: 0.75;
+  margin: 0 5px;
+}
+a:hover, a:focus {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=sunset.css.map */

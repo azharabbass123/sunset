@@ -402,7 +402,14 @@ h1 { font-size: 48px; font-weight: 200;
 	letter-spacing: 0.02em;
 	font-weight: 300;
 	line-height: 1.7em;
-	
+	a{
+		color:#ff0;
+		cursor: pointer;
+		&:hover,
+		&:focus{
+			color:#f56000;
+		}
+	}
 	p {
 		margin-bottom: 15px;
 	}
@@ -412,4 +419,33 @@ h1 { font-size: 48px; font-weight: 200;
 		font-weight: 500;
 	}
 	
+}
+
+/* 
+	Sharing section
+*/
+.sunset-shareThis{
+	display: block;
+	text-align: center;
+
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	li{
+		float: none;
+		display: inline-block;
+	}
+}
+
+a{
+	font-size: 25px;
+	opacity: 0.75;
+	margin: 0 5px;
+
+	&:hover,
+	&:focus{
+		opacity: 1;
+	}
 }

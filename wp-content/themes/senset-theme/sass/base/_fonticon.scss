@@ -29,7 +29,9 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 } 
-
+.sunset-twitter:before {content: "\e900";}
+.sunset-googleplus:before {content: "\e901";}
+.sunset-facebook:before {content: "\e902";}
 .sunset-audio:before { content: "\e800"; }
 .sunset-chevron-left:before { content: "\e801"; }
 .sunset-chevron-right:before { content: "\e802"; }
