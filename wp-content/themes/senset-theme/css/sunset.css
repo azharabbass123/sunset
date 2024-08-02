@@ -1072,21 +1072,26 @@ a:hover, a:focus {
 }
 
 .widget_area {
-  margin: 0 50px;
   padding: 0 20px;
 }
 
 h2.wp-block-heading {
   display: block;
   text-align: center;
-  font-size: 15px;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 500;
   background-color: #303030;
   padding: 8px;
   line-height: 1em;
   margin-bottom: 20px;
   letter-spacing: 0.2px;
   border-radius: 12px;
+}
+
+.wp-block-page-list a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ddd;
 }
 
 .tag-cloud-link {
@@ -1096,6 +1101,31 @@ h2.wp-block-heading {
   padding: 1px 9px;
   border-radius: 10px;
   color: #eee;
+}
+
+.cat-item {
+  position: relative;
+}
+.cat-item a,
+.cat-item span {
+  display: block;
+  line-height: 1em;
+  font-size: 16px;
+  color: #ddd;
+  font-weight: 400;
+}
+.cat-item a {
+  padding: 4px 0;
+}
+.cat-item span {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 7px 5px;
+  background-color: #7D7D7D;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=sunset.css.map */

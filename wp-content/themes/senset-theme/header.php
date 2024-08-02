@@ -33,17 +33,17 @@
 
 <body <?php body_class(); ?>>
 
-	<div class="sunset-sidebar">
+	<div class="sunset-sidebar sidebar-closed">
 		<div class="sunset-sidebar-container">
 			<a class="js-toggleSidebar sidebar-close">
 				<span class="sunset-icon sunset-close"></span>
 			</a>
-			<div sclass="sidebar-scroll">
+			<div class="sidebar-scroll">
 				<?php get_sidebar(); ?>
-			</div>
-		</div>
-	</div> <!--.sunset-sidebar-container -->
-
+			</div><!--.sidebar-scroll -->
+		</div><!--.sunset-sidebar-container -->
+	</div><!--.sunset-sidebar -->
+	<div class="sidebar-overlay"></div>
 	<div class="container-fluid">
 
 		<div class="row">
