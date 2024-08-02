@@ -165,6 +165,11 @@ jQuery(document).ready( function($){
 		return ( ( el_bottom - el_height*0.25 > scroll_pos ) && ( el_top < ( scroll_pos+0.5*window_height ) ) );
 		
 	}
-	
+	/* sidebar functions */
+	$(document).on('click', '.js-toggleSidebar', function() {
+		$('.sunset-sidebar').toggleClass('sidebar-closed');
+		$('.body').toggleClass('no-scroll')
+		$('.sidebar-overlay').fadeClass(320);
+    });
 	
 });

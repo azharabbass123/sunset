@@ -1,6 +1,6 @@
 <?php /*
 	
-@package sunset-theme
+@package senset-theme
 
 */
 
@@ -10,27 +10,33 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 		<div class="container">
+			<div class="row">
 
-			<?php
+				<div class="col-xs-12 col-md-10 col-lg-8 col-lg-offset-2 col-md-offset-1">
 
-			if (have_posts()) :
+					<?php
 
-				while (have_posts()) : the_post();
+					if (have_posts()) :
 
-					get_template_part('template-parts/single', get_post_format());
+						while (have_posts()) : the_post();
 
-					the_post_navigation();
+							get_template_part('template-parts/single', get_post_format());
 
-					if (comments_open()) :
-						comments_template();
+							echo sunset_post_navigation();
+
+							if (comments_open()) :
+								comments_template();
+							endif;
+
+						endwhile;
+
 					endif;
 
-				endwhile;
+					?>
 
-			endif;
+				</div><!-- .col-xs-12 -->
 
-			?>
-
+			</div><!-- .row -->
 		</div><!-- .container -->
 
 

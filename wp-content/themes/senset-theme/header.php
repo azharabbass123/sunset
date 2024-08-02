@@ -33,12 +33,25 @@
 
 <body <?php body_class(); ?>>
 
+	<div class="sunset-sidebar">
+		<div class="sunset-sidebar-container">
+			<a class="js-toggleSidebar sidebar-close">
+				<span class="sunset-icon sunset-close"></span>
+			</a>
+			<div sclass="sidebar-scroll">
+				<?php get_sidebar(); ?>
+			</div>
+		</div>
+	</div> <!--.sunset-sidebar-container -->
+
 	<div class="container-fluid">
 
 		<div class="row">
 
 			<header class="header-container background-image text-center" style="background-image: url('<?php echo esc_url(get_header_image()); ?>'); opacity: 0.5;">
-
+				<a class="js-toggleSidebar sidebar-open">
+					<span class="sunset-icon sunset-menu"></span>
+				</a>
 				<div class="header-content table">
 					<div class="table-cell">
 						<h1 class="site-title sunset-icon">

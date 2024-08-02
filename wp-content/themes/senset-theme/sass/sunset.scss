@@ -10,13 +10,20 @@
 @import 'base/mixins';			//mixins
 @import 'base/placeholders';	//placeholders
 @import 'base/fonticon';		//font icons
-@import 'base/wordpress';		//wordpress default classes
+@import 'base/wordpress';
+
+
+//wordpress default classes
 
 /* 
 	Generic 
 	------------------------------------------------
 */
-body { font-family: $body-font; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: greyscale; }
+body { font-family: $body-font; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: greyscale;
+	&.no-scroll{
+		overflow-y: hidden;
+	}
+}
 
 a { color: $primary-color; @include animate( color, 320ms );
 	&:hover,
@@ -403,7 +410,7 @@ h1 { font-size: 48px; font-weight: 200;
 	font-weight: 300;
 	line-height: 1.7em;
 	a{
-		color:#ff0;
+		color: #f65630;
 		cursor: pointer;
 		&:hover,
 		&:focus{
@@ -448,4 +455,117 @@ a{
 	&:focus{
 		opacity: 1;
 	}
+}
+
+// Sidebar Section
+
+.sidebar-overlay{
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.3);
+	position: fixed;
+	z-index: 3;
+	display: none;
+}
+
+.sunset-sidebar{
+	position: fixed;
+	color: hsl(0, 0%, 100%);
+	z-index: 9;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #1f1f1f;
+	height: 100vh;
+	width: 100%;
+	max-width: 280px;
+	padding-top: 40px;
+	@include animate(transform, 320ms );
+
+	&.sidebar-closed{
+		@include transform(translateX(100%));
+	} 
+	a{
+		color: #bababa;
+
+		&:hover,
+		&:focus{color: #fff;}
+	}
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+
+	li{
+		list-style: none;
+	}
+	//admin profile styling in sidebar
+	h1.sunset-username,
+	h2.sunset-description { font-weight: 100; color: #fff; }
+	h1.sunset-username { font-size: 24px; margin: 0 0 10px; }
+	h2.sunset-description { font-size: 13px; margin: 0 0 20px; }
+	.image-container { display: block; width: 100%; overflow: hidden; text-align: center;}
+	.profile-picture { width: 122px; height: 122px; overflow: hidden; border-radius: 50%; margin: 20px auto; background-position: center center; background-repeat: no-repeat; background-size: cover; }
+    .sunset-icon-sidebar{color: #fff;
+	&:hover{color: #f56000;}}
+	
+} 
+
+.sunset-sidebar-container{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100vh;
+}
+
+.sidebar-close,
+.sidebar-open{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	color: #fff;
+	cursor: pointer;
+
+	&:hover,
+	&:focus{
+		color: #f56000;
+	}
+}
+
+.sidebar-open{
+	left: auto;
+	right: 20px;
+	top: 20px;
+	font-size: 10px;
+}
+
+//Widgets section
+.widget_area{
+	margin: 0 50px;
+	padding: 0 20px;
+}
+
+h2.wp-block-heading{
+	display: block;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 300;
+	background-color: #303030;
+	padding: 8px;
+	line-height: 1em;
+	margin-bottom: 20px;
+	letter-spacing: 0.2px;
+	border-radius: 12px;
+}
+
+.tag-cloud-link{
+	text-align: center;
+	display: inline-block;
+	background-color: #7d7d7d;
+	padding: 1px 9px;
+	border-radius: 10px;
+	color: #eee;
+	
 }

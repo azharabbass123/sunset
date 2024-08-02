@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The sidebar containing the main widget area
  *
@@ -7,11 +8,11 @@
  * @package senset-theme
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+if (!is_active_sidebar('sunset-sidebar')) {
 	return;
 }
 ?>
 
-<aside id="secondary" class="widget-area">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-</aside><!-- #secondary -->
+<aside id="secondary" class="widget_area" rol="complementary">
+	<?php dynamic_sidebar('sunset-sidebar'); ?>
+</aside>
