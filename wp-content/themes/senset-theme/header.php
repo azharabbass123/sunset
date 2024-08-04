@@ -43,7 +43,7 @@
 			</div><!--.sidebar-scroll -->
 		</div><!--.sunset-sidebar-container -->
 	</div><!--.sunset-sidebar -->
-	<div class="sidebar-overlay"></div>
+	<div class="sidebar-overlay js-toggleSidebar"></div>
 	<div class="container-fluid">
 
 		<div class="row">

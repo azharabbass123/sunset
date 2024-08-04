@@ -468,6 +468,7 @@ a{
 	position: fixed;
 	z-index: 3;
 	display: none;
+	cursor: e-resize;
 }
 
 .sunset-sidebar{
@@ -556,7 +557,8 @@ a{
 	padding: 0 20px;
 }
 
-h2.wp-block-heading{
+h2.wp-block-heading,
+.sunset-widget-title{
 	display: block;
 	text-align: center;
 	font-size: 20px;
@@ -612,4 +614,15 @@ h2.wp-block-heading{
 		border-radius: 10px;
 	}
 	
+}
+
+//sunset popular posts styles
+.sunset_popular_posts-2{
+	.media-body{
+		display: block;
+		line-height: 1em;
+		font-size: 16px;
+		color: #ddd;
+		font-weight: 400;
+	}
 }

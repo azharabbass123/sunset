@@ -27,12 +27,9 @@ jQuery(document).ready(function($){
     $('#remove-picture').on('click', function(e){
         e.preventDefault();
         var answer = confirm("Are you sure you want to delete your Profile Picture?");
-        if(answer == ture){
+        if(answer == true){
             $('#profile-picture').val('');
             $('.sunset-general-form').submit();
-        }
-        else{
-            console.log("Oh do not do that!");
         }
         return;
     });
