@@ -1138,4 +1138,89 @@ h2.wp-block-heading,
   font-weight: 400;
 }
 
+.form-control-msg {
+  display: none;
+}
+
+.has-error .form-control-msg {
+  display: block;
+}
+
+.js-show-feedback {
+  display: block;
+}
+
+.sunset-contact-form {
+  padding: 40px 0;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+.sunset-contact-form .form-group {
+  margin-bottom: 30px;
+  position: relative;
+}
+.sunset-contact-form .form-group:before {
+  position: absolute;
+  display: block;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #cbcbcb;
+}
+.sunset-contact-form .form-group .form-control-msg {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+}
+.sunset-contact-form .form-group.has-error:before {
+  background-color: red;
+}
+
+.sunset-form-control {
+  resize: vertical;
+  border: none;
+  border-radius: 0;
+  padding: 8px 15px;
+  outline: none;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+.sunset-form-control::-webkit-input-placeholder {
+  text-transform: uppercase;
+}
+.sunset-form-control::-moz-placeholder {
+  text-transform: uppercase;
+}
+.sunset-form-control:-ms-placeholder {
+  text-transform: uppercase;
+}
+.sunset-form-control:-moz-placeholder {
+  text-transform: uppercase;
+}
+.sunset-form-control:hover, .sunset-form-control:focus, .sunset-form-control:active {
+  box-shadow: none;
+}
+
+.btn-sunset-form {
+  -webkit-transition: all 320ms ease;
+  -moz-transition: all 320ms ease;
+  -ms-transition: all 320ms ease;
+  -o-transition: all 320ms ease;
+  transition: all 320ms ease;
+  background-color: #656565;
+  border-radius: 2px;
+  font-size: 26px;
+  padding: 14px 60px;
+  color: #fff;
+  font-weight: 100;
+  border: none;
+}
+.btn-sunset-form:hover, .btn-sunset-form:focus {
+  background-color: #333333;
+  color: #fff;
+}
+
 /*# sourceMappingURL=sunset.css.map */

@@ -2,7 +2,7 @@
 
 /*
 	
-@package sunsettheme
+@package senset-theme
 	
 	========================
 		SHORTCODE OPTIONS
@@ -53,3 +53,23 @@ function sunset_popover($atts, $content = null)
 }
 
 add_shortcode('popover', 'sunset_popover');
+
+// Contact Form shortcode
+function sunset_contact_form($atts, $content = null)
+{
+
+	//[contact_form]
+
+	//get the attributes
+	$atts = shortcode_atts(
+		array(),
+		$atts,
+		'contact_form'
+	);
+
+	//return HTML
+	ob_start();
+	include 'templates/contact-form.php';
+	return ob_get_clean();
+}
+add_shortcode('contact_form', 'sunset_contact_form');
