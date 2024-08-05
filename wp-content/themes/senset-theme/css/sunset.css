@@ -311,6 +311,11 @@ a:hover, a:focus {
   height: 200px;
   margin-bottom: 33px;
 }
+@media (max-width: 767px) {
+  .header-container {
+    height: 200px;
+  }
+}
 
 .site-title {
   color: #fff;
@@ -452,6 +457,12 @@ article {
   padding-top: 4px;
   padding-bottom: 40px;
 }
+@media (max-width: 767px) {
+  article {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
 
 h1 {
   font-size: 48px;
@@ -475,6 +486,11 @@ h1.entry-title:before {
 }
 h1.entry-title:after {
   margin-left: 10px;
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 20px;
+  }
 }
 
 .entry-meta {
@@ -503,6 +519,11 @@ h1.entry-title:after {
   height: 330px;
   display: block;
   position: relative;
+}
+@media (max-width: 767px) {
+  .standard-featured {
+    height: 220px;
+  }
 }
 .standard-featured:after {
   -webkit-transition: background-color 320ms ease;
@@ -591,6 +612,11 @@ h1.entry-title:after {
   height: 600px;
   position: relative;
 }
+@media (max-width: 767px) {
+  .sunset-format-image .entry-header {
+    height: 220px;
+  }
+}
 .sunset-format-image h1,
 .sunset-format-image .entry-meta,
 .sunset-format-image .entry-header {
@@ -663,6 +689,11 @@ h1.entry-title:after {
 }
 .sunset-format-gallery .standard-featured:after {
   background-color: transparent;
+}
+@media (max-width: 767px) {
+  .sunset-format-gallery .standard-featured {
+    height: 220px;
+  }
 }
 .sunset-format-gallery .carousel-control {
   background: none;
