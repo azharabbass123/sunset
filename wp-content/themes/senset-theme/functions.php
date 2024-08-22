@@ -166,7 +166,7 @@ require get_template_directory() . '/inc/custom-header.php';
  */
 require get_template_directory() . '/inc/template-tags.php';
 
-//calling my admin panel functions file
+//calling my admin panel functions files
 require get_template_directory() . '/inc/cleanup.php';
 require get_template_directory() . '/inc/function-admin.php';
 require get_template_directory() . '/inc/enqueue.php';

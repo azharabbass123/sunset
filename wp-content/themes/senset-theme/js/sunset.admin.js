@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
             },
             multiple: false
         });
-
+        //prompt user to select a image for background.
         mediaUploader.on('select', function(){
             attachment = mediaUploader.state().get('selection').first().toJSON();
             $('#profile-picture').val(attachment.url);
