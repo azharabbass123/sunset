@@ -23,6 +23,7 @@
 	<?php wp_head(); ?>
 
 	<?php
+	//including css files
 	$custom_css = esc_attr(get_option('sunset_css'));
 	if (!empty($custom_css)) :
 		echo '<style>' . $custom_css . '</style>';

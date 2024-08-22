@@ -3,7 +3,7 @@
 /*
 	
 @package senset-theme
--- Image Post Format
+-- Image Post Format for displaying posts containing images
 
 */
 
