@@ -3,7 +3,7 @@
 /*
 	
 @package senset-theme
--- Video Post Format
+-- Video Post Format for displaying post contaning videos
 
 */
 

@@ -3,7 +3,7 @@
 /*
 	
 @package senset-theme
--- Page Template
+-- Page Template for displaying normal pages
 
 */
 
